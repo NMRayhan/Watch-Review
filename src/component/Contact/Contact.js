@@ -4,12 +4,6 @@ import "./Contact.css";
 const Contact = () => {
   return (
     <div>
-      <div className="pt-4 container mx-auto">
-        <h2 className="text-5xl text-center font-bold text-red-600">
-          Contact Component
-        </h2>
-      </div>
-
       <section className="py-3">
         <div className="container mx-auto w-9/12">
           <div className="form-container grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">

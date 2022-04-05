@@ -21,8 +21,6 @@ const Dashboard = () => {
   console.log(Items);
   return (
     <div className="pt-4 container mx-auto">
-      <h2 className="text-5xl text-center font-bold text-red-600">DashBoard</h2>
-
       <div className="grid grid-cols-2 justify-between items-center mt-8">
         <div>
           <LineChart

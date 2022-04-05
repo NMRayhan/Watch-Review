@@ -19,14 +19,14 @@ const Home = () => {
               <h1 className="text-6xl text-left text-sky-600 font-mono font-bold">
                 Watch your time
               </h1>
-              <h1 className="text-6xl text-left text-fuchsia-500 font-serif font-bold">
+              <h1 className="text-6xl mt-2 text-left text-fuchsia-500 font-serif font-bold">
                 Go fast for life
               </h1>
             </div>
 
             <div>
-              <p className="text-justify text-2xl font-normal text-gray-500 mt-5">
-                These product details can be one sentence, a short paragraph or
+              <p className="text-justify text-2xl font-normal text-gray-500 py-4">
+                These product details can be updated by User Review, a short paragraph or
                 bulleted. They can be serious, funny or quirky. They can be
                 located right next to or underneath product titles and product
                 images. They can be scannable selling points or have strong
@@ -36,7 +36,7 @@ const Home = () => {
 
             <div className="mt-4">
               <Link to="/contact" className="header-button text-center font-medium text-blue-100 bg-blue-600 rounded-sm p-3 text-2xl hover:bg-blue-500 hover:text-blue-100 duration-200">
-                Learn More
+                Contact US
               </Link>
             </div>
           </div>
@@ -53,7 +53,7 @@ const Home = () => {
         <h1 className="text-4xl text-center font-mono text-blue-500 py-3">
           Some Our Happy Customer
         </h1>
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5">
           {Review.slice(0, 3).map((item) => (
             <ReviewItem
               details={item}

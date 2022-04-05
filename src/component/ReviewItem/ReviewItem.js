@@ -1,6 +1,6 @@
 import React from "react";
 import { CheckCircleIcon } from "@heroicons/react/solid";
-import { Link, useParams } from "react-router-dom";
+import { Link} from "react-router-dom";
 
 const ReviewItem = ({ details }) => {
   const { picture, name, rating, review, id} = details;
