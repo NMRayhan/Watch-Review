@@ -55,11 +55,17 @@ const Home = () => {
         </h1>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8">
           {Review.slice(0, 3).map((item) => (
-            <ReviewItem details={item} key={item._id}></ReviewItem>
+            <ReviewItem
+              details={item}
+              key={item._id}
+            ></ReviewItem>
           ))}
         </div>
         <div className="mt-6 text-center">
-          <Link to="/review" className=" text-3xl bg-sky-500 hover:text-sky-200 text-teal-100 p-3 rounded-md hover:bg-sky-600 duration-100">
+          <Link
+            to="/review"
+            className=" text-3xl bg-sky-500 hover:text-sky-200 text-teal-100 p-3 rounded-md hover:bg-sky-600 duration-100"
+          >
             See all Review
           </Link>
         </div>
