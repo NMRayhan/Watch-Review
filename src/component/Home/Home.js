@@ -57,7 +57,7 @@ const Home = () => {
           {Review.slice(0, 3).map((item) => (
             <ReviewItem
               details={item}
-              key={item._id}
+              key={item.id}
             ></ReviewItem>
           ))}
         </div>

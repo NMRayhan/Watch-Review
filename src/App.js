@@ -19,7 +19,7 @@ function App() {
         <Route path="/blog" element={<Blog></Blog>}></Route>
         <Route path="/dashboard" element={<Dashboard></Dashboard>}></Route>
         <Route path="/contact" element={<Contact></Contact>}></Route>
-        <Route path="/review/:_id" element={<DetailsReview></DetailsReview>}></Route>
+        <Route path="/review/:id" element={<DetailsReview></DetailsReview>}></Route>
         <Route path="*" element={<Page404></Page404>}></Route>
       </Routes>
     </div>

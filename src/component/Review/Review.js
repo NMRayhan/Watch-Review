@@ -1,10 +1,9 @@
 import React from "react";
-import { useItems } from "../../hooks/getReview";
+import useItems from "../../hooks/useItems";
 import ReviewItem from "../ReviewItem/ReviewItem";
 
 const Review = () => {
   const [Items, setItems] = useItems();
-
   return (
     <div className="pt-4 container mx-auto">
       <br />

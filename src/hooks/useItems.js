@@ -11,14 +11,5 @@ const useItems = () => {
   return [Items, setItems];
 };
 
-const useDashboard = () => {
-  const [Items, setItems] = useState([]);
-  useEffect(() => {
-    fetch("DashBoard.json")
-      .then((response) => response.json())
-      .then((data) => setItems(data));
-  }, []);
-  return [Items, setItems];
-};
 
-export { useItems, useDashboard };
+export default useItems;
