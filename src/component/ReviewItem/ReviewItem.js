@@ -19,7 +19,6 @@ const ReviewItem = ({ details }) => {
             </div>
             <div className='mt-2'>
                 <h1 className='text-2xl font-medium'>Rating : <span className='text-2xl text-teal-500'>{rating}</span> </h1>
-                
             </div>
         </div>
     );
