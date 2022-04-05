@@ -13,3 +13,7 @@
 .header-button{
     width: 150px;
 }
+
+.review-item{
+    background-color: rgba(0, 255, 255, 0.091);
+}
