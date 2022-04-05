@@ -1,7 +1,3 @@
-.header-container{
-    height: 90vh;
-}
-
 .header-img{
     width: 60%;
 }
@@ -14,6 +10,3 @@
     width: 150px;
 }
 
-.review-item{
-    background-color: rgba(0, 255, 255, 0.091);
-}

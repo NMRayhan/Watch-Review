@@ -40,14 +40,15 @@ const Home = () => {
             </div>
           </div>
           <div className="header-img md:mt-6 sm:mt-6">
-            <img
+            <img className="w-100"
               src="https://w0.peakpx.com/wallpaper/620/932/HD-wallpaper-ulysses-nardin-blue-clock-clocks-fossil-luxury-rotary-watch-watches-zenith-thumbnail.jpg"
               alt=""
             />
           </div>
         </div>
       </div>
-      <div className="mt-8 container mx-auto review-item rounded-sm">
+      <div className="py-8 container mx-auto review-item">
+        <h1 className="text-4xl text-center font-mono text-blue-500 py-3">Some Our Happy Customer</h1>
           <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8">
             {
                 Review.slice(0,3).map(item=> <ReviewItem details={item} key={item._id}></ReviewItem>)
