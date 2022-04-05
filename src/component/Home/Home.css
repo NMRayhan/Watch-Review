@@ -1,0 +1,15 @@
+.header-container{
+    height: 90vh;
+}
+
+.header-img{
+    width: 60%;
+}
+
+.header-img img{
+    width: 100%;
+}
+
+.header-button{
+    width: 150px;
+}
