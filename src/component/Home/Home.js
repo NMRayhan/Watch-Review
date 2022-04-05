@@ -35,9 +35,9 @@ const Home = () => {
             </div>
 
             <div className="mt-4">
-              <button className="header-button text-center font-medium text-blue-100 bg-blue-600 rounded-sm p-3 text-2xl hover:bg-blue-500 hover:text-blue-100 duration-200">
+              <Link to="/contact" className="header-button text-center font-medium text-blue-100 bg-blue-600 rounded-sm p-3 text-2xl hover:bg-blue-500 hover:text-blue-100 duration-200">
                 Learn More
-              </button>
+              </Link>
             </div>
           </div>
           <div className="header-img md:mt-6 sm:mt-6">
