@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import ReviewItem from "../ReviewItem/ReviewItem";
 import "./Home.css";
 
@@ -40,7 +41,8 @@ const Home = () => {
             </div>
           </div>
           <div className="header-img md:mt-6 sm:mt-6">
-            <img className="w-100"
+            <img
+              className="w-100"
               src="https://w0.peakpx.com/wallpaper/620/932/HD-wallpaper-ulysses-nardin-blue-clock-clocks-fossil-luxury-rotary-watch-watches-zenith-thumbnail.jpg"
               alt=""
             />
@@ -48,12 +50,19 @@ const Home = () => {
         </div>
       </div>
       <div className="py-8 container mx-auto review-item">
-        <h1 className="text-4xl text-center font-mono text-blue-500 py-3">Some Our Happy Customer</h1>
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8">
-            {
-                Review.slice(0,3).map(item=> <ReviewItem details={item} key={item._id}></ReviewItem>)
-            }
-          </div>
+        <h1 className="text-4xl text-center font-mono text-blue-500 py-3">
+          Some Our Happy Customer
+        </h1>
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8">
+          {Review.slice(0, 3).map((item) => (
+            <ReviewItem details={item} key={item._id}></ReviewItem>
+          ))}
+        </div>
+        <div className="mt-6 text-center">
+          <Link to="/review" className=" text-3xl bg-sky-500 hover:text-sky-200 text-teal-100 p-3 rounded-md hover:bg-sky-600 duration-100">
+            See all Review
+          </Link>
+        </div>
       </div>
     </div>
   );
